@@ -7,8 +7,8 @@ const botaoGoogle = document.getElementById('btnLoginGoogle')
 formLogin.addEventListener('submit', (event) => {
     event.preventDefault() //evita recarregar a página   
     const email = document.getElementById('emailLogin').value
-    const senha = document.getElementById('passwordLogin').value
-        loginFirebase(email, senha)
+    const senha = document.getElementById('senhaLogin').value
+    loginFirebase(email, senha)
 })
 
 //listener botão Google
