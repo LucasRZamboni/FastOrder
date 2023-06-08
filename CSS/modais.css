@@ -1,0 +1,75 @@
+#modalContainer {
+    /* z-index: 1000; */
+    width: 90%;
+    height: fit-content;
+    position: absolute;
+    top: 300px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.modal-body img {
+    width: 80%;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.modal-body small {
+    display: flex;
+    align-items: center;
+    height: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+.modal-body small ion-icon {
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.modal-header button {
+    color: rgb(250, 0, 0);
+    font-size: 22px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.modal-footer button {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.modal-footer button ion-icon {
+    font-size: 30px;
+}
+
+.modal-footer button span {
+    display: none;
+}
+
+.modal-footer button:hover span {
+    display: block;
+    margin-left: 10px;
+    transition: .3s;
+}
+
+h6 {
+    display: flex;
+    align-items: center;
+}
+
+h6 ion-icon {
+    margin-right: 10px;
+}
