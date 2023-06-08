@@ -40,7 +40,7 @@
     <title>FastOrder - Menu</title>
 </head>
 
-<body>
+<body onload="verificaLogado()">
 
     <div class="container">
         <header class="bg-dark">
@@ -69,13 +69,14 @@
                                 <a class="nav-link" href="#">About</a>
                             </li>
                         </ul>
-                        <div class="d-flex">
-                            <a href="index.html">
-                                <button class="btn btn-outline-info">
-                                    <ion-icon name="return-up-back-outline" class="text-warning"></ion-icon>
-                                    <span>Voltar</span>
-                                </button>
-                            </a>
+                        <div class="d-flex text-right">
+                            <ul class="navbar-nav ms-auto flex-nowrap">
+                                <div id="imagemUsuario"></div>
+                                <li class="nav-item">
+                                    <button class="btn  btn-block fundo-laranja-escuro" onclick="logoutFirebase()"><i
+                                            class="bi bi-box-arrow-in-right"></i> Logout</button>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -95,7 +96,9 @@
             </div>
             <div class="cards">
                 <div class="card bg-gradient mb-1 mt-1">
-                    <img src="images/lanche.jpg" alt="imagem lanches">
+                    <div class="imagem-produto">
+                        <img src="images/lanche.jpg" alt="imagem lanches">
+                    </div>
                     <div class="card-body">
                         <a href="lanches.html">
                             <button class="btn btn-dark text-dark rounded-5">Lanches</button>
@@ -103,7 +106,9 @@
                     </div>
                 </div>
                 <div class="card bg-gradient mb-1 mt-1">
-                    <img src="images/salgados.png" alt="imagem salgados" class="bg-black">
+                    <div class="imagem-produto">
+                        <img src="images/salgados.png" alt="imagem salgados" class="bg-black">
+                    </div>
                     <div class="card-body">
                         <a href="lanches.html">
                             <button class="btn btn-dark text-dark rounded-5">Salgados</button>
@@ -111,7 +116,9 @@
                     </div>
                 </div>
                 <div class="card bg-gradient mb-1 mt-1">
-                    <img src="images/tapiocas.png" alt="imagem tapiocas">
+                    <div class="imagem-produto">
+                        <img src="images/tapiocas.png" alt="imagem tapiocas">
+                    </div>
                     <div class="card-body">
                         <a href="tapiocas.html">
                             <button class="btn btn-dark text-dark rounded-5">Tapiocas</button>
@@ -119,7 +126,24 @@
                     </div>
                 </div>
                 <div class="card bg-gradient mb-1 mt-1">
-                    <img src="images/bebidas.png" alt="imagem bebidas" class="bg-black">
+                    <div class="imagem-produto">
+                        <img src="images/salgadinhosSaquinho.png" alt="imagem salgadinhos de saquinho" class="bg-black">
+                    </div>
+                    <div class="card-body">
+                        <a href="salgadoSaquinho.html">
+                            <button class="btn btn-dark text-dark rounded-5">Salgadinhos</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ------------------------------------------- -->
+                <div class="division-page bg-light rounded-3 mt-3 mb-3"></div>
+                <!-- ------------------------------------------- -->
+
+                <div class="card bg-gradient mb-1 mt-1">
+                    <div class="imagem-produto">
+                        <img src="images/bebidas.png" alt="imagem bebidas" class="bg-black">
+                    </div>
                     <div class="card-body">
                         <a href="bebidas.html">
                             <button class="btn btn-dark text-dark rounded-5">Bebidas</button>
@@ -127,15 +151,9 @@
                     </div>
                 </div>
                 <div class="card bg-gradient mb-1 mt-1">
-                    <img src="images/salgadinhosSaquinho.png" alt="imagem salgadinhos de saquinho" class="bg-black">
-                    <div class="card-body">
-                        <a href="salgadoSaquinho.html">
-                            <button class="btn btn-dark text-dark rounded-5">Salgadinhos</button>
-                        </a>
+                    <div class="imagem-produto">
+                        <img src="images/açaí.png" alt="imagem bebidas" class="bg-black">
                     </div>
-                </div>
-                <div class="card bg-gradient mb-1 mt-1">
-                    <img src="images/açaí.png" alt="imagem bebidas" class="bg-black">
                     <div class="card-body">
                         <a href="acai.html">
                             <button class="btn btn-dark text-dark rounded-5">Açaí</button>
@@ -156,6 +174,16 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- --------IONICONS-------- -->
+
+    <!-- Carregando os scripts do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-storage-compat.js"></script>
+    <!-- Carregamento dos scripts do projeto-->
+    <script src="js/authentication/firebase.js"></script>
+    <script src="js/authentication/authentication.js"></script>
+    <script src="js/util/alerta.js"></script>
 
 </body>
 

@@ -43,7 +43,7 @@
 
 section {
     width: 100%;
-    min-height: calc(100vh - 100px);
+    height: fit-content;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -62,7 +62,8 @@ section .imagemLogin {
 }
 
 section .imagemLogin img {
-    width: 45%;
+    max-width: 40%;
+    width: 30%;
 }
 
 section form {
@@ -96,7 +97,8 @@ section form .buttons {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 section form .buttons button {

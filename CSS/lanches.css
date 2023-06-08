@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: right;
     z-index: 1000;
-    position: absolute;
+    position: fixed;
     left: 0;
 }
 

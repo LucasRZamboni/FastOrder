@@ -60,7 +60,7 @@
             <div class="imagemLogin">
                 <img src="images/loginPNGbg.png" alt="image do login">
             </div>
-            <form action="" class="formLogin">
+            <form class="formLogin">
                 <div class="form-group">
                     <h2 class="text-info bg-light mb-4">LOGIN</h2>
                     <div class="form-floating mb-3">
@@ -75,12 +75,13 @@
                     </div>
                     <small>Novo por aqui? <a href="cadastro.html">Cadastre-se</a></small>
                 </div>
+                <div id="msgAlerta"></div>
                 <div class="buttons">
-                    <button type="button" class="btn btn-outline-light" id="btnLoginEmail" onclick="login()">
+                    <button type="submit" class="btn btn-outline-light" id="btnLoginEmail">
                         <img src="images/login.png" alt="imagem do botão de login">
                         <span>Login com e-mail</span>
                     </button>
-                    <button class="btn btn-outline-light" id="btnLoginGoogle">
+                    <button type="button" class="btn btn-outline-light" id="btnLoginGoogle">
                         <img src="images/loginGoogle.png" alt="imagem do botão de login">
                         <span>Login com Google</span>
                     </button>
@@ -95,7 +96,16 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- --------IONICONS-------- -->
 
-    <script src="js/teste.js"></script>
+    <!-- Carregando os scripts do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-storage-compat.js"></script>
+    <!-- Carregamento dos scripts do projeto-->
+    <script src="js/authentication/firebase.js"></script>
+    <script src="js/authentication/authentication.js"></script>
+    <script src="js/views/login.js"></script>
+    <script src="js/util/alerta.js"></script>
 </body>
 
 </html>
