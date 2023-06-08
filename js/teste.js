@@ -1,4 +1,4 @@
-
+const urlApp = window.location.href.replace(/\/[^\/]*$/, '');
 function login() {
-    window.location.href = "/menu.html";
+    window.location.href = `${urlApp}/home.html`;
 }
