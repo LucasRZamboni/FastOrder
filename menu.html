@@ -55,12 +55,12 @@
                     <div class="collapse navbar-collapse" id="navbarColor02">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Home
+                                <a class="nav-link active" href="menu.html">Menu
                                     <span class="visually-hidden">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link" href="lanches.html">Lanches</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Pricing</a>
@@ -69,14 +69,12 @@
                                 <a class="nav-link" href="#">About</a>
                             </li>
                         </ul>
-                        <div class="d-flex text-right">
-                            <ul class="navbar-nav ms-auto flex-nowrap">
-                                <div id="imagemUsuario"></div>
-                                <li class="nav-item">
-                                    <button class="btn  btn-block fundo-laranja-escuro" onclick="logoutFirebase()"><i
-                                            class="bi bi-box-arrow-in-right"></i> Logout</button>
-                                </li>
-                            </ul>
+                        <div class="d-flex">
+                            <div id="imagemUsuario"></div>
+                            <button class="btn  btn-outline-dark" onclick="logoutFirebase()">
+                                <ion-icon name="log-out-outline" class="text-warning"></ion-icon>
+                                Logout
+                            </button>
                         </div>
                     </div>
                 </div>

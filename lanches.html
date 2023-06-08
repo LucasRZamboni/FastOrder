@@ -40,13 +40,13 @@
     <title>FastOrder - Lanches</title>
 </head>
 
-<body>
+<body onload="verificaLogado()">
 
     <div class="container">
         <header class="bg-dark">
             <nav class="navbar navbar-expand-lg bg-gradient" data-bs-theme="dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">FastOrder</a>
+                    <a class="navbar-brand" href="menu.html">FastOrder</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -55,12 +55,12 @@
                     <div class="collapse navbar-collapse" id="navbarColor02">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Home
+                                <a class="nav-link" href="menu.html">Menu
                                     <span class="visually-hidden">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link active" href="#">Lanches</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Pricing</a>
@@ -70,12 +70,11 @@
                             </li>
                         </ul>
                         <div class="d-flex">
-                            <a href="menu.html">
-                                <button class="btn btn-outline-info">
-                                    <ion-icon name="return-up-back-outline" class="text-warning"></ion-icon>
-                                    <span>Voltar</span>
-                                </button>
-                            </a>
+                            <div id="imagemUsuario"></div>
+                            <button class="btn  btn-outline-dark" onclick="logoutFirebase()">
+                                <ion-icon name="log-out-outline" class="text-warning"></ion-icon>
+                                Logout
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -132,7 +131,15 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- --------IONICONS-------- -->
-
+    <!-- Carregando os scripts do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-storage-compat.js"></script>
+    <!-- Carregamento dos scripts do projeto-->
+    <script src="js/authentication/firebase.js"></script>
+    <script src="js/authentication/authentication.js"></script>
+    <script src="js/util/alerta.js"></script>
     <script src="js/util/lanches.js"></script>
 
 </body>

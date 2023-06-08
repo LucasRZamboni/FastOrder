@@ -60,7 +60,7 @@
             <div class="imagemLogin">
                 <img src="images/loginPNGbg.png" alt="image do login">
             </div>
-            <form class="formLogin">
+            <form id="formLogin">
                 <div class="form-group">
                     <h2 class="text-info bg-light mb-4">LOGIN</h2>
                     <div class="form-floating mb-3">
@@ -77,7 +77,7 @@
                 </div>
                 <div id="msgAlerta"></div>
                 <div class="buttons">
-                    <button type="submit" class="btn btn-outline-light" id="btnLoginEmail">
+                    <button type="submit" class="btn btn-outline-light">
                         <img src="images/login.png" alt="imagem do botão de login">
                         <span>Login com e-mail</span>
                     </button>
@@ -104,8 +104,9 @@
     <!-- Carregamento dos scripts do projeto-->
     <script src="js/authentication/firebase.js"></script>
     <script src="js/authentication/authentication.js"></script>
-    <script src="js/views/login.js"></script>
     <script src="js/util/alerta.js"></script>
+    <script src="js/views/login.js"></script>
+
 </body>
 
 </html>

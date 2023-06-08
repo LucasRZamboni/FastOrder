@@ -7,7 +7,6 @@ formCadastro.addEventListener('submit', (event) => {
     const email = document.getElementById('emailCadastro').value
     const senha = document.getElementById('senhaCadastro').value
     event.preventDefault()
-    
     novoUsuario(email, senha)
 }
 )

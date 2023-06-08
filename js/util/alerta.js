@@ -13,7 +13,7 @@ function alerta(mensagem, tipo) {
     tipo +
     ' alert-dismissible mt-2" role="alert">' +
     mensagem +
-    '<button type="button" class="btn btn-outline-primary fechar" data-bs-dismiss="alert">' +
+    '<button type="button" class="btn btn-outline-dark fechar" data-bs-dismiss="alert">' +
     '<ion-icon name="close-outline" class="text-info"></ion-icon>' +
     "</button></div>";
   mensagemAlerta.append(wrapper);

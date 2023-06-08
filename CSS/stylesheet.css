@@ -1,10 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
+
 html,
-body{
+body {
     width: 100%;
     min-height: 100vh;
+}
+
+.d-flex #imagemUsuario img {
+    border-radius: 50%;
+}
+
+.d-flex .btn {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex .btn ion-icon {
+    font-size: 20px;
+    margin-right: 10px;
 }

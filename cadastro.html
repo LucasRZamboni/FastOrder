@@ -60,21 +60,22 @@
             <div class="imagemCadastro">
                 <img src="images/cadastroPNGbg.png" alt="image do login">
             </div>
-            <form action="" class="formCadastro">
+            <form id="formCadastro">
                 <div class="form-group">
                     <h2 class="text-info bg-dark mb-4">CADASTRO</h2>
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control bg-dark" id="emailCadastro"
                             placeholder="nome@exemplo.com" title="Digite seu e-mail">
-                        <label for="emailLogin">E-mail</label>
+                        <label for="email">E-mail</label>
                     </div>
                     <div class="form-floating">
                         <input type="password" class="form-control bg-dark" id="senhaCadastro" placeholder="Senha"
                             title="Digite sua senha">
-                        <label for="senhaLogin">Senha</label>
+                        <label for="senha">Senha</label>
                     </div>
                     <small>Ja tem cadastro? <a href="login.html">Login</a></small>
                 </div>
+                <div id="msgAlerta"></div>
                 <div class="buttons">
                     <button type="submit" class="btn btn-outline-dark">
                         <ion-icon name="save-outline" class="text-success"></ion-icon>
