@@ -1,0 +1,12 @@
+1 -- signin e signup
+2 -- reset senha
+3 -- validação de email
+----------------------
+1.1 splash / tela inicial com redirecionamento automatico (temporizador) - direcionando para o Menu
+1.2 - utilizar api do Whatsapp para enviar o pedido para a lanchonete.
+-----------------------
+
+menuPrimario - fazer o card col-12 para ocupar o width todo
+
+----------------------
+api do chatGPT para duvidas *mais para frente*
