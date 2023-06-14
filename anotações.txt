@@ -1,6 +1,6 @@
-1 -- signin e signup
+1 -- signin e signup ✔
 2 -- reset senha
-3 -- validação de email
+3 -- validação de email ✔
 ----------------------
 1.1 splash / tela inicial com redirecionamento automatico (temporizador) - direcionando para o Menu
 1.2 - utilizar api do Whatsapp para enviar o pedido para a lanchonete.
