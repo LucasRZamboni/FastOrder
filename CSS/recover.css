@@ -75,6 +75,7 @@ section form #msgAlerta {
   padding: 10px;
   position: relative;
   color: white;
+  flex-direction: column;
 }
 
 section form #msgAlerta button {

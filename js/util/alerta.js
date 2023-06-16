@@ -7,6 +7,8 @@
  */
 function alerta(mensagem, tipo) {
   let mensagemAlerta = document.getElementById("msgAlerta");
+  let alertaAnterior = mensagemAlerta.querySelector(".alert");
+
   let wrapper = document.createElement("div");
   wrapper.innerHTML =
     '<div class="alert alert-' +
@@ -16,6 +18,11 @@ function alerta(mensagem, tipo) {
     '<button type="button" class="btn btn-outline-dark fechar" data-bs-dismiss="alert">' +
     '<ion-icon name="close-outline" class="text-info"></ion-icon>' +
     "</button></div>";
+
+    if (alertaAnterior) {
+      mensagemAlerta.removeChild(alertaAnterior);
+    }
+
   mensagemAlerta.append(wrapper);
 }
 

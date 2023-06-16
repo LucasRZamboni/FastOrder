@@ -25,20 +25,21 @@ function resetaSenha() {
     .sendPasswordResetEmail(email)
     .then(() => {
       alerta(
-        `✅ | Foi enviado um email de de redefinição de senha, <br>`,
+        `✅ | Foi enviado um e-mail de de redefinição de senha, <br>`,
         "success"
       );
 
       setTimeout(function () {
         alerta(
-          `Vamos te redirecionar para a pagina de login`,
+          `Redirecionando para a página de login`,
           "warning"
         );
-      },2000);
-
-      setTimeout(function () {
-        window.location.href = `${urlApp}/login.html`;
+        setTimeout(function () {
+          window.location.href = `${urlApp}/login.html`;
+        },3000);
       },3000);
+
+      
     })
     .catch((error) => {
       alerta(
@@ -113,9 +114,12 @@ function loginFirebase(email, senha) {
     .catch((error) => {
       console.error(error.code);
       alerta(
-        `Erro: Não foi possível efetuar o login <br> ${errors[error.code]}`,
+        `❌ | Não foi possível efetuar o login <br> ${errors[error.code]}`,
         "danger"
       );
+      setTimeout(function () {
+        window.location.href = `${urlApp}/login.html`;
+      }, 4000);
     });
 }
 
