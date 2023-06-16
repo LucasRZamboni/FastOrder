@@ -25,3 +25,28 @@ body {
     font-size: 20px;
     margin-right: 10px;
 }
+#msgAlerta {
+    min-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    flex-direction: column;
+}
+#msgAlerta .alert{
+    width: 100% !important;
+}
+#msgAlerta button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#msgAlerta button ion-icon {
+    font-size: 20px;
+}

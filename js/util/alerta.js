@@ -9,6 +9,8 @@ function alerta(mensagem, tipo) {
   let mensagemAlerta = document.getElementById("msgAlerta");
   let alertaAnterior = mensagemAlerta.querySelector(".alert");
 
+ 
+
   let wrapper = document.createElement("div");
   wrapper.innerHTML =
     '<div class="alert alert-' +
@@ -20,7 +22,7 @@ function alerta(mensagem, tipo) {
     "</button></div>";
 
     if (alertaAnterior) {
-      mensagemAlerta.removeChild(alertaAnterior);
+      alertaAnterior.remove();
     }
 
   mensagemAlerta.append(wrapper);

@@ -117,9 +117,6 @@ function loginFirebase(email, senha) {
         `❌ | Não foi possível efetuar o login <br> ${errors[error.code]}`,
         "danger"
       );
-      setTimeout(function () {
-        window.location.href = `${urlApp}/login.html`;
-      }, 4000);
     });
 }
 

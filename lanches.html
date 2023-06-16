@@ -82,16 +82,17 @@
         </header>
         <div class="divisor"></div>
         <section class="bg-dark flex-wrap rounded-3">
-            <h2 class="text-light mt-3 mb-3 col-12 text-center">Lanches</h2>
-            <div class="division-page bg-light rounded-3 mb-4"></div>
             <div class="sacola-compras">
                 <a href="#" class="btn btn-outline-dark rounded-3">
                     <div class="icone-qtd">
-                        <span class="text-danger">0</span>
+                        <span class="text-danger" id="qtdPedidos">0</span>
                     </div>
                     <ion-icon name="bag-outline" class="text-warning"></ion-icon>
                 </a>
             </div>
+            <h2 class="text-light mt-3 mb-3 col-12 text-center">Lanches</h2>
+            <div class="division-page bg-light rounded-3 mb-4"></div>
+            <div id="msgAlerta"></div>
             <div class="cards">
                 <div class="card bg-gradient mb-1 mt-1 rounded-2">
                     <div class="card-header text-warning bg-black col-12 rounded-1">MISTO QUENTE</div>
@@ -141,6 +142,7 @@
     <script src="js/authentication/authentication.js"></script>
     <script src="js/util/alerta.js"></script>
     <script src="js/util/lanches.js"></script>
+    <script src="js/views/adicionaItem.js"></script>
 
 </body>
 

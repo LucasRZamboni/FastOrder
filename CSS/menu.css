@@ -120,7 +120,8 @@ section .cards .card {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 45%;
+    max-width: 90%;
+    width: 90%;
     min-height: 40%;
     height: 50%;
 }
@@ -147,10 +148,13 @@ section .cards .card .card-body {
     align-items: center;
     justify-content: center;
     justify-self: center;
+    margin-top: 10px;
 }
 
 section .cards .card .card-body a button {
     padding: 10px;
     font-size: 14px;
-    min-width: 90px;
+    min-width: 150px;
+    max-width:250px;
+    text-transform: uppercase;
 }
