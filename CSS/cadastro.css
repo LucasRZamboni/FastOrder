@@ -47,9 +47,8 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 25px;
-    box-shadow: 5px 5px 10px rgb(122, 122, 122), inset -5px -5px 5px rgb(49, 49, 49);
-}
+    min-height: 100vh;
+  }
 
 section .imagemCadastro {
     width: 100%;

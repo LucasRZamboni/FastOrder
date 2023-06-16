@@ -17,7 +17,9 @@ const urlApp = window.location.href.replace(/\/[^\/]*$/, "");
  * @return {object} O usuário criado
  */
 
-function resetaSenha(email) {
+
+function resetaSenha() {
+  const email = document.getElementById("email").value
   firebase
     .auth()
     .sendPasswordResetEmail(email)
@@ -26,6 +28,17 @@ function resetaSenha(email) {
         `✅ | Foi enviado um email de de redefinição de senha, <br>`,
         "success"
       );
+
+      setTimeout(function () {
+        alerta(
+          `Vamos te redirecionar para a pagina de login`,
+          "warning"
+        );
+      },2000);
+
+      setTimeout(function () {
+        window.location.href = `${urlApp}/login.html`;
+      },3000);
     })
     .catch((error) => {
       alerta(

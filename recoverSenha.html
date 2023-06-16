@@ -34,7 +34,7 @@
 
     <!-- ------------------------------------------- -->
 
-    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/recover.css">
 
     <!-- ------------------------------------------- -->
     <link rel="stylesheet" href="CSS/stylesheet.css">
@@ -49,7 +49,7 @@
 
     <div class="container">
         <header>
-            <a href="menuPrimario.html">
+            <a href="index.html">
                 <button class="btn btn-outline-info">
                     <ion-icon name="return-up-back-outline" class="text-warning"></ion-icon>
                     <span>Voltar</span>
@@ -57,39 +57,20 @@
             </a>
         </header>
         <section class="bg-dark">
-            <div class="imagemLogin">
-                <img src="images/loginPNGbg.png" alt="image do login">
-            </div>
-            <form id="formLogin">
+
+            <form id="formRecover">
                 <div class="form-group">
-                    <h2 class="text-info bg-light mb-4">LOGIN</h2>
+                    <h2 class="text-info bg-light mb-4">Recuperar senha</h2>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control bg-light" id="emailLogin" placeholder="nome@exemplo.com"
+                        <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com"
                             title="Digite seu e-mail">
                         <label for="emailLogin">E-mail</label>
                     </div>
-                    <div class="form-floating">
-                        <input type="password" class="form-control bg-light" id="senhaLogin" placeholder="Senha"
-                            title="Digite sua senha">
-                        <label for="senhaLogin">Senha</label>
-                    </div>
-                    <div class="smalls">
-                    <small><a href="cadastro.html">Cadastrar</a></small>
-                    <small><a href="recoverSenha.html">Esqueceu a senha?</a></small>
-                </div>
+                    <button type="button" class="btn btn-outline-dark" onclick="resetaSenha()">Redefinir</button>
                 </div>
                 <div id="msgAlerta"></div>
-                <div class="buttons">
-                    <button type="submit" class="btn btn-outline-light">
-                        <img src="images/login.png" alt="imagem do botão de login">
-                        <span>Login com e-mail</span>
-                    </button>
-                    <button type="button" class="btn btn-outline-light" id="btnLoginGoogle">
-                        <img src="images/loginGoogle.png" alt="imagem do botão de login">
-                        <span>Login com Google</span>
-                    </button>
-                </div>
             </form>
+            
         </section>
     </div>
 
@@ -108,7 +89,6 @@
     <script src="js/authentication/firebase.js"></script>
     <script src="js/authentication/authentication.js"></script>
     <script src="js/util/alerta.js"></script>
-    <script src="js/views/login.js"></script>
 
 </body>
 
