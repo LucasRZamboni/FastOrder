@@ -75,7 +75,7 @@
                     </div>
                     <div class="smalls">
                     <small><a href="cadastro.html">Cadastrar</a></small>
-                    <small><a href="recoverSenha.html">Esqueceu a senha?</a></small>
+                    <small><a href="#" onclick="abrirModal(event,'modal2')">Esqueceu a senha?</a></small>
                 </div>
                 </div>
                 <div id="msgAlerta"></div>
@@ -90,6 +90,8 @@
                     </button>
                 </div>
             </form>
+            <!-- Arquivo HTML principal -->
+            <div id="modalContainer"></div>
         </section>
     </div>
 
@@ -109,6 +111,7 @@
     <script src="js/authentication/authentication.js"></script>
     <script src="js/util/alerta.js"></script>
     <script src="js/views/login.js"></script>
+    <script src="js/util/carregaModais.js"></script>
 
 </body>
 

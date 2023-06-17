@@ -27,19 +27,8 @@ function resetaSenha() {
       alerta(
         `✅ | Foi enviado um e-mail de de redefinição de senha, <br>`,
         "success"
-      );
-
-      setTimeout(function () {
-        alerta(
-          `Redirecionando para a página de login`,
-          "warning"
-        );
-        setTimeout(function () {
-          window.location.href = `${urlApp}/login.html`;
-        },3000);
-      },3000);
-
-      
+      ); 
+           
     })
     .catch((error) => {
       alerta(
