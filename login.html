@@ -24,7 +24,7 @@
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- ----------------STYLESHEETS---------------- -->
 
     <link rel="stylesheet" href="CSS/util/_bootswatch.scss">
@@ -67,16 +67,19 @@
                         <input type="email" class="form-control bg-light" id="emailLogin" placeholder="nome@exemplo.com"
                             title="Digite seu e-mail">
                         <label for="emailLogin">E-mail</label>
+
                     </div>
                     <div class="form-floating">
                         <input type="password" class="form-control bg-light" id="senhaLogin" placeholder="Senha"
                             title="Digite sua senha">
                         <label for="senhaLogin">Senha</label>
+                        <button type="button" id="verSenhaLogin" class="btn btn-dark rounded-2"><i
+                                class="bi bi-eye-fill text-warning" id="iconeSenhaLogin"></i></button>
                     </div>
-                    <div class="smalls">
-                    <small><a href="cadastro.html">Cadastrar</a></small>
-                    <small><a href="#" onclick="abrirModal(event,'modal2')">Esqueceu a senha?</a></small>
-                </div>
+                    <div class="smalls mt-2">
+                        <small class="text-light">Novo? <a href="cadastro.html">Cadastre-se</a></small>
+                        <small><a href="#" onclick="abrirModal(event,'modal2')">Esqueceu a senha?</a></small>
+                    </div>
                 </div>
                 <div id="msgAlerta"></div>
                 <div class="buttons">
@@ -112,6 +115,7 @@
     <script src="js/util/alerta.js"></script>
     <script src="js/views/login.js"></script>
     <script src="js/util/carregaModais.js"></script>
+    <script src="js/util/verSenhaLogin.js"></script>
 
 </body>
 

@@ -25,6 +25,7 @@ body {
     font-size: 20px;
     margin-right: 10px;
 }
+
 #msgAlerta {
     min-width: 90%;
     display: flex;
@@ -34,9 +35,11 @@ body {
     position: relative;
     flex-direction: column;
 }
-#msgAlerta .alert{
+
+#msgAlerta .alert {
     width: 100% !important;
 }
+
 #msgAlerta button {
     position: absolute;
     top: 5px;
@@ -49,4 +52,29 @@ body {
 
 #msgAlerta button ion-icon {
     font-size: 20px;
+}
+
+#verSenhaLogin,
+#verSenhaCadastro {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    padding: 11px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#verSenhaLogin i,
+#verSenhaCadastro i {
+    font-size: 20px;
+}
+
+section form .form-group .form-floating:nth-child(3) {
+    display: flex;
+    gap: 2px;
+}
+
+section form .form-group .form-floating label {
+    width: 90%;
 }

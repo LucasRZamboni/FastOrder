@@ -25,6 +25,7 @@
         crossorigin="anonymous"></script>
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- ----------------STYLESHEETS---------------- -->
 
     <link rel="stylesheet" href="CSS/util/_bootswatch.scss">
@@ -72,6 +73,8 @@
                         <input type="password" class="form-control bg-dark" id="senhaCadastro" placeholder="Senha"
                             title="Digite sua senha">
                         <label for="senha">Senha</label>
+                        <button type="button" id="verSenhaCadastro" class="btn btn-outline-dark rounded-2"><i
+                                class="bi bi-eye-fill text-warning" id="iconeSenhaCadastro"></i></button>
                     </div>
                     <small>Ja tem cadastro? <a href="login.html">Login</a></small>
                 </div>
@@ -103,6 +106,7 @@
     <script src="js/authentication/authentication.js"></script>
     <script src="js/views/cadastro.js"></script>
     <script src="js/util/alerta.js"></script>
+    <script src="js/util/verSenhaCadastro.js"></script>
 
 
 </body>

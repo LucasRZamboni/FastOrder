@@ -23,8 +23,8 @@ function abrirModal(event, modalId) {
     console.log("Modal aberto");
   }
 }
-function fechaModal() {
-    const modalElement = document.getElementById("modal2");
+function fechaModal(modalId) {
+    const modalElement = document.getElementById(modalId);
 
     if (modalElement) {
       const modal = bootstrap.Modal.getInstance(modalElement);
@@ -34,7 +34,7 @@ function fechaModal() {
       }, 2500);
     }
     else{
-        console.log("Não foi possível fechar o modal", errorMessage);
+        console.log("Não foi possível fechar o modal");
     }
 
 }

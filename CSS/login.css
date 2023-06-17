@@ -88,6 +88,7 @@ section form .form-group .smalls {
   align-items: center;
   justify-content: space-between;
 }
+
 section form .form-group small {
   padding-left: 10px;
 }
@@ -135,4 +136,3 @@ section form .buttons button:hover span {
 section form .buttons button img {
   width: 30px;
 }
-
