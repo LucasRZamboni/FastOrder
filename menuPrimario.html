@@ -28,8 +28,9 @@
     <link rel="stylesheet" href="CSS/util/bootstrap.min.css">
 
     <!-- ------------------------------------------- -->
-
+    <link rel="stylesheet" href="CSS/splash.css">
     <link rel="stylesheet" href="CSS/menuPrimario.css">
+
 
     <!-- ------------------------------------------- -->
     <link rel="stylesheet" href="CSS/stylesheet.css">
@@ -41,8 +42,8 @@
 </head>
 
 <body>
-
-    <div class="container">
+    <div class="loader bg-dark"></div>
+    <div class="container" id="container_principal">
         <header class="bg-dark">
             <a href="index.html">
                 <button class="btn btn-outline-info">
@@ -50,17 +51,18 @@
                     <span>Voltar</span>
                 </button>
             </a>
-            <div class="d-flex">                
+            <div class="d-flex">
                 <div id="imagemUsuario"></div>
                 <a href="login.html"><button class="btn  btn-outline-dark login">
-                    <ion-icon name="log-in-outline" class="text-warning"></ion-icon>
-                    Login
-                </button></a>
+                        <ion-icon name="log-in-outline" class="text-warning"></ion-icon>
+                        Login
+                    </button></a>
             </div>
         </header>
+
         <div class="divisor"></div>
         <section class="bg-dark flex-wrap rounded-3">
-             <!-- <div class="sacola-compras">
+            <!-- <div class="sacola-compras">
                 <a href="#" class="btn btn-outline-dark rounded-3">
                     <div class="icone-qtd">
                         <span class="text-danger">0</span>
@@ -71,7 +73,7 @@
             <h2 class="text-light mt-3 mb-3 col-12 text-center">FastOrder</h2>
             <div class="division-page bg-light rounded-3 mb-4"></div>
             <h2 class="text-light mt-3 mb-3 col-12 text-center">MENU</h2>
-           
+
             <div class="cards bg-gradient rounded-2">
                 <div class="card bg-transparent mb-1 mt-1">
                     <div class="imagem-produto">
@@ -167,7 +169,7 @@
     <script src="js/authentication/firebase.js"></script>
     <script src="js/authentication/authentication.js"></script>
     <script src="js/util/alerta.js"></script>
-
+    <script src="js/views/loading.js"></script>
 </body>
 
 </html>
