@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 span.classList.add('active');
             }, (idx + 1) * 800)
-        }, 2500);
+        }, 2600);
         setTimeout(() => {
             logoSpan.forEach((span, idx) => {
                 setTimeout(() => {
