@@ -13,7 +13,16 @@
     align-items: center;
     width: 100%;
 }
-
+.modal-body .itens{
+    width: 100%;
+}
+.modal-body .itens h3{
+    width: 100%;
+    text-align: left;
+}
+.modal-body .itens p{
+    font-size: 20px;
+}
 .modal-body img {
     width: 80%;
     border-radius: 5px;
@@ -72,4 +81,51 @@ h6 {
 
 h6 ion-icon {
     margin-right: 10px;
+}
+
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.buttons a {
+    text-decoration: none;
+}
+
+
+.buttons a button {
+    padding: 10px;
+    font-size: 14px;
+    min-width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.buttons a button ion-icon {
+    font-size: 30px;
+}
+
+
+.buttons a button span {
+    display: none;
+    font-size: 20px;
+}
+
+
+.buttons a button:hover {
+    transition: .3s;
+}
+
+
+.buttons a button:hover span {
+    display: block;
+    margin-left: 10px;
+    transition: .3s;
 }
