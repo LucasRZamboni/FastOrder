@@ -17,9 +17,8 @@ const urlApp = window.location.href.replace(/\/[^\/]*$/, "");
  * @return {object} O usuário criado
  */
 
-
 function resetaSenha() {
-  const email = document.getElementById("email").value
+  const email = document.getElementById("email").value;
   firebase
     .auth()
     .sendPasswordResetEmail(email)
@@ -27,8 +26,7 @@ function resetaSenha() {
       alerta(
         `✅ | Foi enviado um e-mail de de redefinição de senha, <br>`,
         "success"
-      ); 
-           
+      );
     })
     .catch((error) => {
       alerta(
@@ -37,7 +35,7 @@ function resetaSenha() {
         }`,
         "danger"
       );
-    console.error(error);
+      console.error(error);
     });
 }
 
@@ -48,7 +46,7 @@ function enviarEmailVerificacao() {
     .sendEmailVerification()
     .then(() => {
       alerta(
-        `✅ | Foi enviado um email de verificação, <br> verifique a caixa de entrada ou a lixeira`,
+        `✅ | Foi enviado um email de verificação. <br> Verifique a caixa de entrada ou a lixeira`,
         "success"
       );
     })
@@ -97,8 +95,16 @@ function loginFirebase(email, senha) {
     .auth()
     .signInWithEmailAndPassword(email, senha)
     .then((result) => {
-      console.log(result.user);
-      window.location.href = `${urlApp}/menu.html`;
+      const user = result.user;
+      if (user.emailVerified) {
+        console.log(result.user);
+        window.location.href = `${urlApp}/menu.html`;
+      } else {
+        alerta(
+          "❌ | E-não verificado! <br> Você precisa verificar seu e-mail antes de fazer o login",
+          "danger"
+        );
+      }
     })
     .catch((error) => {
       console.error(error.code);
